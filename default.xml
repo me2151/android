@@ -17,7 +17,16 @@
            remote="github"
            sync-c="true"
            sync-j="4" />
+  
+  <remote  name="emotion"
+           fetch="https://github.com/"
+           revision="refs/heads/nougat" />
 
+  <default revision="refs/heads/nougat"
+           remote="emotion"
+           sync-c="true"
+           sync-j="4" />  
+  
   <!-- AOSP Projects -->
 
   <project path="build" name="LineageOS/android_build" groups="pdk,tradefed">
